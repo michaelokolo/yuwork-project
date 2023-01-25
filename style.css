@@ -58,7 +58,7 @@ header{
 }
 
 .left-nav-items .left-nav-item button{
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 22px;
     cursor: pointer;
@@ -68,7 +68,7 @@ header{
 }
 
 .left-nav-items .left-nav-item button span i{
-    font-size: 12px;
+    font-size: 9px;
 }
 
 .left-nav-items .left-nav-item button a{
@@ -109,19 +109,30 @@ header{
     border-bottom: 0px solid rgb(184, 182, 182);
     box-shadow: 0 2px 4px rgba(0,0,0,0.09);
     border-radius: 6px;
-    
+    padding:24px;
 }
 
 .findtalent-dropdown-container .container-left ul li{
     list-style: none;
-    
+    padding-bottom: 10px;
+}
+
+.findtalent-dropdown-container .container-left ul{
+    margin: 0;
+    padding: 0;
+
 }
 
 .findtalent-dropdown-container .container-left ul li button{
     background:none;
     border: none;
-    height: 60px;
-    margin-bottom: 10px;
+    height: 55px;
+    width: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
 
 }
 
@@ -140,7 +151,22 @@ header{
     text-decoration: none;
     color: #545554;
     font-size: 12px;
-    font-weight: normal;
+    font-weight: 500;
+    line-height: 22px;
     
+}
+
+.findtalent-dropdown-container .container-left button .sub-title{
+    display: block;
+    text-align: left;
+    font-size: 10px;
     
+}
+
+.findtalent-dropdown-container .container-left button span i{
+    position: absolute;
+    right: 20px;
+    top:50%;
+    transform: translateY(-50%);
+    color:#14a800;
 }
