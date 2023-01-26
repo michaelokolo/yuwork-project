@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     --brand-color:#108a00;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -86,11 +87,28 @@ header{
     width: 50%;
     justify-content: right;
     height: 100%;
+}
+
+.nav-search-input-container input{
+    width: 100%;
     
+}
+
+.search-wrapper{
+    background-color: gray;
+    width:50%;
+    height: 35px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    position: relative;
 }
 
 .search-wrapper form{
     display: flex;
+    position: relative;
 }
 
 .nav-search-dropdown-container{
@@ -99,6 +117,9 @@ header{
 .nav-search-btns button{
     position: absolute;
     top:10px;
+    left:4px;
+    background: none;
+    border: none;
 }
 
 /*--- styling the Find Talent dropdown ---*/
@@ -110,6 +131,7 @@ header{
     box-shadow: 0 2px 4px rgba(0,0,0,0.09);
     border-radius: 6px;
     padding:24px;
+    
 }
 
 .findtalent-dropdown-container .container-left ul li{
@@ -136,15 +158,10 @@ header{
 
 }
 
-.findtalent-dropdown-container .container-left ul li .left-nav-item-dropdown-btn1{
+.findtalent-dropdown-container .container-left ul li .left-nav-item-dropdown-btn:hover{
     background-color: #f0f7ee;
-}
-
-.findtalent-dropdown-container .container-left ul li button:hover{
-    
     cursor: pointer;
 }
-
 
 
 .findtalent-dropdown-container .container-left ul li button a{
@@ -169,4 +186,97 @@ header{
     top:50%;
     transform: translateY(-50%);
     color:#14a800;
+}
+
+.container-left{
+    position: relative;
+}
+
+.container-left::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(207, 205, 205);
+    width:0.5px;
+    height:95%;
+    right:-30px;
+    top:0px;
+}
+
+.container-center{
+    margin-left: 40px;
+    position:relative;
+    padding-left:40px;
+    font-size: 12px;
+    
+}
+
+.container-center .big-text{
+    text-decoration: none;
+    color: #545554;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 10px;
+    position: relative;
+    padding-top: 10px;
+
+}
+
+.container-center .big-text sup{
+    vertical-align: super;
+    font-size: 5.2px;
+    position: absolute;
+    top:4px;
+    
+}
+
+.container-center .small-text{
+    font-size: 10px;
+    line-height: 18px;
+    color: #7e7e7e;
+}
+.container-center button{
+    background: none;
+    border: none;
+    font-size: 10px;
+    padding: 0;
+    color: #14a800;
+}
+
+.container-center button a{
+    color: #128d02;
+    padding-right: 10px;
+}
+
+.container-center::before{
+    content: "";
+    position: absolute;
+    background-color: #8ee483;
+    width: 15%;
+    height: 3px;
+    top:-5px;
+    left:40px;
+}
+
+
+.container-right{
+    margin-top:25px;
+    margin-left:60px;
+
+}
+.container-right button{
+    background: none;
+    border:none;
+    
+}
+
+.container-right li{
+    list-style: none;
+    
+}
+
+.container-right button a{
+    text-decoration: none;
+    color: #5e5d5d;
+    font-size: 11px;
+    line-height: 30px;
 }
