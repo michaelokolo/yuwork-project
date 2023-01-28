@@ -1,20 +1,35 @@
-const findTalentBtn1 = document.querySelector(".left-nav-item-dropdown-btn1");
-const findTalentBtn2 = document.querySelector(".left-nav-item-dropdown-btn2");
-const findTalentBtn3 = document.querySelector(".left-nav-item-dropdown-btn3");
+const navSearchForm = document.querySelector('.container-right .search-form');
+const navSearchBar = document.querySelector('.container-right .search-form input');
+const navTalentbtn = document.querySelector('.container-right .search-form button');
 
+ function changeFormColor(){
+    navSearchForm.style.backgroundColor = "#d8e0d8";
+    navSearchBar.style.backgroundColor = "#f7faf7";
+    navTalentbtn.style.backgroundColor = "#d8e0d8";
+    
+}
 
-function changeContentFindTalentBtn1(){
-    findTalentBtn1.style.backgroundColor = "#f0f7ee"
+function normalFormColor(){
+    navSearchForm.style.backgroundColor = "white"
+     navSearchBar.style.backgroundColor = "white"
+     navTalentbtn.style.backgroundColor = "white";
+}
+
+navSearchBar.addEventListener('mouseover', changeFormColor);
+navSearchBar.addEventListener('mouseout', normalFormColor);
+
+function changeFormColorTalent(){
+    navSearchForm.style.backgroundColor = "#d8e0d8";
+    navTalentbtn.style.backgroundColor = "#f7faf7";
+    navSearchBar.style.backgroundColor = "#d8e0d8";
 
 }
 
-function changeContentFindTalentBtn2(){
-    findTalentBtn2.style.backgroundColor = "#f0f7ee"
+function normalFormColorTalent(){
+    navSearchForm.style.backgroundColor = "white"
+    navTalentbtn.style.backgroundColor = "white"
+    navSearchBar.style.backgroundColor = "white";
 }
 
-function changeContentFindTalentBtn3(){
-    findTalentBtn3.style.backgroundColor = "#f0f7ee"
-}
-
-
-findTalentBtn2.addEventListener('mouseenter', changeContentFindTalentBtn2)
+navTalentbtn.addEventListener('mouseover', changeFormColorTalent);
+navTalentbtn.addEventListener('mouseout', normalFormColorTalent);

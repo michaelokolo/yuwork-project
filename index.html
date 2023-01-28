@@ -9,76 +9,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="nav-wrapper">
-        <div class="nav-container">
-            <div class="logo">
-                <a href="#">yuwork</a>
+    <header>
+        <a href="#" class="logo">
+            <h1>yuwork</h1>
+        </a>
+        <nav class="main-nav">
+            <div class="container-left">
+                <a href="#">Find Talent <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <a href="#">Find Work <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <a href="#">Why Upwork <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <a href="#">Enterprise</a>
             </div>
-            <div class="main-nav">
-                <div class="left-nav">
-                    <nav class="left-nav-items-container">
-                        <ul class="left-nav-items">
-                            <li class="left-nav-item">
-                                <button>
-                                    <span class="nav-item-label">Find Talent</span>
-                                    <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                                </button>
-                            </li>
+
+            <div class="container-right">
+                <div class="search-form">
+                    <input type="search" id="search-box" placeholder="Search">
+                    <label for="search-box" class="fas fa-search"></label>
+                    <div class="fa fa-times"></div>
+                    <button>Talent <i class="fa fa-angle-down" aria-hidden="true"></i></button>
+                </div>
+
+                <a href="#" class="login-link">Log In</a>
+                <a href="#" class="signup-link">Sign Up</a>
+            </div>
+        </nav>
+        
                             
-                            <li class="left-nav-item">
-                                <button>
-                                    <span class="nav-item-label">Find Work</span>
-                                    <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                                </button>
-                            </li>
-                            <li class="left-nav-item">
-                                <button>
-                                    <span class="nav-item-label">Why Upwork</span>
-                                    <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-                                </button>
-                            </li>
-                            <li class="left-nav-item">
-                                <button>
-                                    <a href="#">
-                                        <span>Enterprise</span>
-                                    </a>
-                                </button>
-                            </li>
-                        </ul>
-
-                    </nav>
-                </div>
-                <div class="right-nav">
-                    <div class="search-wrapper">
-                        <form action="#" class="nav-search-form">
-                            <div class="nav-search-input-container">
-                                <input type="search" autocomplete="off" placeholder="Search" aria-label="Search">
-                                <div class="nav-search-btns">
-                                    <button type="submit">
-                                        <span class="search-icon">
-                                            <i class="fa fa-search" aria-hidden="true"></i>
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="nav-search-dropdown-container">
-                                <button type="button">
-                                    <span> Talent </span>
-                                    <span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
-
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                    <a href="#" class="nav-item-login-link">Log In</a>
-                    <a href="#" class="nav-item-signup-link">Sign Up</a>
-                </div>
-            </div>
-        </div>
+                    
+                
+                        
     </header>
 
 <!--Dropdown menu section-->
-<div class="findtalent-dropdown-container">
+<!-- <div class="findtalent-dropdown-container">
     <div class="container-left">
     <ul>
         <li><button class="left-nav-item-dropdown-btn">
@@ -169,7 +132,7 @@
     </ul> 
     </div>
 
-</div>
+</div> -->
 
 <script src="script.js"></script>    
 </body>
