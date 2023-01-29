@@ -16,6 +16,7 @@
     padding:0;
     outline: none;
     text-decoration: none;
+    transition: 0.2s linear;
 }
 
 
@@ -35,6 +36,56 @@ header{
     z-index: 1000;
     
 }
+
+.menu-bar{
+    width:6%;
+    height:4rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 0;
+    display:none;
+}
+
+
+
+
+
+.hamburger  {
+    content:"";
+    position:absolute;
+    width: 2.8rem;
+    height: .2rem;
+    background-color: black;
+    margin:4% ;
+}
+
+
+
+
+
+.hamburger::before{
+    content:"";
+    position:absolute;
+    width: 2.8rem;
+    height: .2rem;
+    background-color: black;
+    top:1rem;
+}
+
+.hamburger::after{
+    content:"";
+    position:absolute;
+    width: 2.8rem;
+    height: .2rem;
+    background-color: black;
+    bottom: 1rem;
+}
+
+
 header .logo h1{
     font-size: 2.8rem;
     font-weight: 500;
@@ -57,6 +108,14 @@ header .main-nav .container-left a{
     margin: 0 1rem;
     font-size: 1.6rem;
     color: var(--font-color1);
+}
+
+header .main-nav .container-left .login-link{
+    display:none;
+}
+
+header .main-nav .container-left .signup-link{
+    display: none;
 }
 
 header .main-nav .container-left a i{
@@ -187,6 +246,9 @@ header .main-nav .container-right .signup-link:hover{
     background-color: #209c0f;
 }
 
+header .main-nav .container-right i{
+    display: none;
+}
 
 @media (max-width:1024px) {
     html{
@@ -195,9 +257,96 @@ header .main-nav .container-right .signup-link:hover{
 }
 
 @media (max-width:991px) {
-    
 
+    header{
+        padding: 1rem 0.2%;
+    }
 
+    .menu-bar{
+        display: block;
+    }
+
+    header .logo h1{
+        font-size: 2.5rem;
+    }
+    .main-nav .container-left{
+        position: absolute;
+        top:100%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        margin-top: 4rem;
+        margin-left: 1.5rem;
+        left:-100%;
+        z-index: 900;
+    }
+
+    .main-nav .container-left.active{
+        left:0;
+    }
+
+    header .main-nav .container-left a{
+        display: block;
+        width: 100%;
+        margin-bottom: 7rem;
+        
+    }
+
+    header .main-nav .container-left a i{
+        position: absolute;
+        right:5%;
+    }
+
+    header .main-nav .container-left .login-link{
+        display: block;
+    }
+
+    header .main-nav .container-right .login-link{
+        display:none;
+    }
+
+    header .main-nav .container-right .search-form{
+        display: none;
+    }
+
+    header .main-nav .container-right i{
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        font-size: 2.5rem;
+        top:50%;
+        transform: translateY(-50%);
+        right: 3%; 
+        color: black;
+    }
+
+    header .main-nav .container-right .signup-link{
+        background: none;
+        color: black;
+    }
+
+    header .main-nav .container-right .signup-link.active{
+        display: none;
+    }
+
+    header .main-nav .container-right .signup-link:hover{
+        background: none;
+    }
+
+    header .main-nav .container-left .signup-link{
+        display: block;
+        text-align: center;
+        position: absolute;
+        top:calc(100vh - 25%);
+        background-color: #1a860c;
+        padding: 1.2rem;
+        border-radius: 5rem;
+        width: 95%;
+        color: white;
+    }
+   
 }
 
 

@@ -1,6 +1,13 @@
 const navSearchForm = document.querySelector('.container-right .search-form');
 const navSearchBar = document.querySelector('.container-right .search-form input');
 const navTalentbtn = document.querySelector('.container-right .search-form button');
+const menubar = document.querySelector('.menu-bar');
+const menu = document.querySelector('.main-nav .container-left');
+const signUplink = document.querySelector('header .container-right .signup-link');
+const hamburgerEl = document.querySelector('.hamburger::before');
+
+
+
 
  function changeFormColor(){
     navSearchForm.style.backgroundColor = "#d8e0d8";
@@ -33,3 +40,10 @@ function normalFormColorTalent(){
 
 navTalentbtn.addEventListener('mouseover', changeFormColorTalent);
 navTalentbtn.addEventListener('mouseout', normalFormColorTalent);
+
+function activateMenu(){
+    menu.classList.toggle("active");
+    signUplink.classList.toggle('active');
+}
+
+menubar.addEventListener('click', activateMenu);
