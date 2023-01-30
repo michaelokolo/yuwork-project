@@ -47,3 +47,4 @@ function activateMenu(){
 }
 
 menubar.addEventListener('click', activateMenu);
+
