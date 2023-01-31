@@ -275,6 +275,7 @@ header .main-nav .container-right i{
     align-items: center;
     padding: 2.5rem 1.5rem;
     box-shadow: var(--box-shadow);
+    margin-top: 1rem;
 }
 
 .main-nav .container-left .dropdown-menu .dropdown-menu-left{
@@ -282,8 +283,9 @@ header .main-nav .container-right i{
     flex-direction: column;
     width: 32%;
     max-width: 48rem;
-    border-right: 0.1rem solid black;
+    border-right: 0.1rem solid rgb(185, 181, 181);
     text-align: center;
+    
     
     
 }
@@ -291,28 +293,55 @@ header .main-nav .container-right i{
 .main-nav .container-left .dropdown-menu .dropdown-menu-left a{
     padding: 0;
     margin: 0;
+    display: flex;
+    padding-left: 1rem;
 }
 
 .main-nav .container-left .dropdown-menu .dropdown-menu-left a button{
     width: 90%;
-    margin: 0 0.5%;
+    margin: 0;
+    height: 8rem;
     text-align: left;
     margin-bottom:2rem ;
     position: relative;
-    
+    background: none;
+    border: none;
+    background-color: var(--font-hover-color);
+    padding-left: 3rem;
 }
 
 .main-nav .container-left .dropdown-menu .dropdown-menu-left a button i{
     position: absolute;
     transform: translateY(-50%);
     top:50%;
+    right:9%;
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.main-nav .container-left .dropdown-menu .dropdown-menu-left a button .super{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    padding-bottom:1rem ;
+}
+
+.main-nav .container-left .dropdown-menu .dropdown-menu-left a button .sub{
+    font-size: 1.5rem;
+    
 }
 
 .main-nav .container-left .dropdown-menu .dropdown-menu-right{
     display: flex;
-    align-items: center;
+    margin-left:5rem;
+    margin-top: 0;
+    padding-top: 0;
+    height: 30rem;
+    
 }
 
+.main-nav .container-left .dropdown-menu .dropdown-menu-right .dropdown-menu-right1{
+
+}
 
 .main-nav .container-left .dropdown-menu .dropdown-menu-right .dropdown-menu-right2{
     display: flex;
