@@ -5,6 +5,7 @@ const menubar = document.querySelector('.menu-bar');
 const menu = document.querySelector('.main-nav .container-left');
 const signUplink = document.querySelector('header .container-right .signup-link');
 const hamburgerEl = document.querySelector('.hamburger::before');
+const dropdownbtnEl = document.querySelectorAll('.dropdown-menu-left button');
 
 
 
@@ -48,3 +49,26 @@ function activateMenu(){
 
 menubar.addEventListener('click', activateMenu);
 
+
+
+
+function buttonhoved(){ 
+for(let i = 0; i <= dropdownbtnEl.length; i++){
+    dropdownbtnEl[i].addEventListener('mouseover', ()=>{
+        dropdownbtnEl[i].style.backgroundColor = 'var(--font-hover-color)'
+        let lastbtn = dropdownbtnEl[i];
+        var buttonNum = `${i}`;
+    })
+
+    dropdownbtnEl[i].addEventListener('mouseout', ()=>{
+        dropdownbtnEl[i].style.backgroundColor = 'white'
+        let lastbtn = dropdownbtnEl[i];
+    })
+    
+}
+
+console.log(buttonNum)
+}
+
+buttonhoved()
+console.log(buttonNum)

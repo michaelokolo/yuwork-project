@@ -308,7 +308,7 @@ header .main-nav .container-right i{
     position: relative;
     background: none;
     border: none;
-    background-color: var(--font-hover-color);
+    
     padding-left: 3rem;
 }
 
@@ -399,7 +399,7 @@ header .dropdown-menu-right .dropdown-menu-right1 a{
 }
 
 .dropdown-menu-right-second{
-    display: flex;
+    display: none;/*-- Remember to change to flex*/
     height: 100%;
     margin-left:5rem;
     gap:3rem;
@@ -484,6 +484,11 @@ header .dropdown-menu-right-second .dropdown-menu-right-second1 a{
     outline: none;
 }
 
+header .dropdown-menu-right-second .dropdown-menu-right-second2 a:hover{
+    background-color: var(--font-hover-color);
+}
+
+
 .dropdown-menu-right-second .dropdown-menu-right-second2 a img{
     width:100%;
     height: 65%;
@@ -497,6 +502,74 @@ header .dropdown-menu-right-second .dropdown-menu-right-second1 a{
     font-size: 1.4rem;
 }
 
+/*--styling the third dropdown*/
+
+
+.dropdown-menu .dropdown-menu-right-third{
+    display: none;/*please remember to change to flex*/
+    height: 100%;
+    margin-left:5rem;
+    gap:3rem;
+}
+
+header .dropdown-menu-right-third .dropdown-menu-right-third1{
+ 
+    flex: 1 1 30rem;
+    max-width: 50rem;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+    
+}
+
+header .dropdown-menu-right-third .dropdown-menu-right-third1::before{
+    content: "";
+    position: absolute;
+    width:6rem;
+    height: 0.5rem;
+    background-color: #94f188;
+    top:2rem;
+}
+
+.dropdown-menu-right-third .dropdown-menu-right-third1 h2{
+    font-size: 1.6rem;
+    padding-bottom: 1.5rem;
+}
+
+
+.dropdown-menu-right-third .dropdown-menu-right-third1 sup{
+    font-size: 0.7rem;
+    position: relative;
+    top:-0.6rem;
+}
+
+
+.dropdown-menu-right-third .dropdown-menu-right-third1 p{
+    font-size:1.4rem;
+    padding-bottom:1.5rem;
+}
+
+header .dropdown-menu-right-third .dropdown-menu-right-third1 a{
+    color: var(--main-color);
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+}
+header .dropdown-menu-right-third .dropdown-menu-right-third2{
+    height: 100%;
+    
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    width:50rem;
+    padding-left: 10rem;
+    font-size: 1.6rem;
+    padding-top: 6.5rem;
+    gap:2rem;
+}
+
 
 
 
@@ -506,6 +579,23 @@ header .dropdown-menu-right-second .dropdown-menu-right-second1 a{
 
 @media (max-width:1200px) {
    
+    .dropdown-menu .dropdown-menu-right-third{
+        flex-wrap: wrap;
+        padding: 0;
+        
+    }
+
+    
+
+    header .dropdown-menu-right-third .dropdown-menu-right-third2{
+        height: 20rem;
+        padding: 0;
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+    }
+    
+    
     .main-nav .container-left .dropdown-menu .dropdown-menu-right{
         display: none;/* change back to flex when you want to activate*/
         flex-direction: column;
