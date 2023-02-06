@@ -6,8 +6,14 @@ const menu = document.querySelector('.main-nav .container-left');
 const signUplink = document.querySelector('header .container-right .signup-link');
 const hamburgerEl = document.querySelector('.hamburger::before');
 const dropdownbtnEl = document.querySelectorAll('.dropdown-menu-left button');
-
-
+const dropdownbtn1 = document.querySelector('.dropdown-menu .dropdown-menu-left .btn1')
+const dropdownright1 = document.querySelector('.main-nav .container-left .dropdown-menu .dropdown-menu-right')
+const dropdownbtn2 = document.querySelector('.dropdown-menu .dropdown-menu-left .btn2');
+const dropdownright2 = document.querySelector('.dropdown-menu-right-second');
+const dropdownright3 = document.querySelector('.dropdown-menu .dropdown-menu-right-third');
+const dropdownbtn3 = document.querySelector('.dropdown-menu .dropdown-menu-left .btn3');
+const findtalentdropdown = document.querySelector('header .main-nav .container-left .dropdown-menu');
+const findtalentlink = document.querySelector('header .container-left .top')
 
 
  function changeFormColor(){
@@ -52,23 +58,62 @@ menubar.addEventListener('click', activateMenu);
 
 
 
-function buttonhoved(){ 
-for(let i = 0; i <= dropdownbtnEl.length; i++){
-    dropdownbtnEl[i].addEventListener('mouseover', ()=>{
-        dropdownbtnEl[i].style.backgroundColor = 'var(--font-hover-color)'
-        let lastbtn = dropdownbtnEl[i];
-        var buttonNum = `${i}`;
-    })
+// function buttonhoved(){ 
+// for(let i = 0; i <= dropdownbtnEl.length; i++){
+//     dropdownbtnEl[i].addEventListener('mouseover', ()=>{
+//         dropdownbtnEl[i].style.backgroundColor = 'var(--font-hover-color)'
+//         let lastbtn = dropdownbtnEl[i];
+//         var buttonNum = `${i}`;
+//     })
 
-    dropdownbtnEl[i].addEventListener('mouseout', ()=>{
-        dropdownbtnEl[i].style.backgroundColor = 'white'
-        let lastbtn = dropdownbtnEl[i];
-    })
+//     dropdownbtnEl[i].addEventListener('mouseout', ()=>{
+//         dropdownbtnEl[i].style.backgroundColor = 'white'
+//         let lastbtn = dropdownbtnEl[i];
+//     })
     
-}
+// }
 
-console.log(buttonNum)
-}
+// console.log(buttonNum)
+// }
 
-buttonhoved()
-console.log(buttonNum)
+// buttonhoved()
+// console.log(buttonNum)
+
+dropdownbtn1.addEventListener('mouseover', ()=>{
+    dropdownright1.classList.add('active1');
+    dropdownright2.classList.remove('active2');
+    dropdownbtn1.style.backgroundColor = "var(--font-hover-color)"
+})
+
+dropdownbtn1.addEventListener('mouseout', ()=>{
+    dropdownright1.classList.remove('active1');
+    dropdownbtn1.style.backgroundColor = "white"
+})
+
+dropdownbtn2.addEventListener('mouseover', ()=>{
+    dropdownright2.classList.add('active2');
+    dropdownright3.classList.remove('active3');
+    dropdownbtn2.style.backgroundColor = "var(--font-hover-color)"
+})
+
+dropdownbtn2.addEventListener('mouseout', ()=>{
+    dropdownright2.classList.remove('active2');
+    dropdownbtn2.style.backgroundColor = "white"
+})
+
+dropdownbtn3.addEventListener('mouseover', ()=>{
+    dropdownright3.classList.add('active3');
+    dropdownbtn3.style.backgroundColor = "var(--font-hover-color)"
+})
+
+dropdownbtn3.addEventListener('mouseout', ()=>{
+    dropdownright3.classList.remove('active3');
+    dropdownbtn3.style.backgroundColor = "white"
+})
+
+
+    findtalentlink.addEventListener('click', ()=>{
+        findtalentdropdown.classlist.add('active6')
+    })
+
+
