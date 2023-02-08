@@ -13,7 +13,7 @@ const dropdownright2 = document.querySelector('.dropdown-menu-right-second');
 const dropdownright3 = document.querySelector('.dropdown-menu .dropdown-menu-right-third');
 const dropdownbtn3 = document.querySelector('.dropdown-menu .dropdown-menu-left .btn3');
 const findtalentdropdown = document.querySelector('header .main-nav .container-left .dropdown-menu');
-const findtalentlink = document.querySelector('header .container-left .top')
+const findtalentlink = document.querySelector('header .main-nav .container-left .top')
 
 
  function changeFormColor(){
@@ -113,7 +113,7 @@ dropdownbtn3.addEventListener('mouseout', ()=>{
 
 
     findtalentlink.addEventListener('click', ()=>{
-        findtalentdropdown.classlist.add('active6')
+        findtalentdropdown.classList.toggle('active6')
     })
 
 

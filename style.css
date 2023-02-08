@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 :root{
     --main-color:#139203;
@@ -28,13 +30,14 @@ header{
     display: flex;
     align-items: center;
     padding: 1rem 2%;
+    background-color: white;
     border-bottom: var(--border);
     position: fixed;
     top:0;
     right:0;
     left:0;
-    z-index: 2000;
-    position: fixed;
+    z-index: 10000;
+    
     
 }
 
@@ -281,6 +284,7 @@ header .main-nav .container-right i{
     z-index: 200;
     transform: scaleY(0);
     transform-origin: top;
+    background-color: white;
 }
 
 .main-nav .container-left .dropdown-menu.active6{
@@ -591,6 +595,46 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
 }
 
 
+/*styling the home section*/
+.home{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap:20rem;
+    display: flex;
+    
+}
+
+.home .left-container h1{
+    font-size: 11rem;
+    font-family: 'Cardo', serif;
+    color: #14a800;
+    line-height: 11rem;
+    letter-spacing: 0.1rem;
+}
+
+.home .left-container p{
+    font-size: 3rem;
+    color: #5e6d55;
+}
+
+.home .left-container a{
+    margin-top: 5rem;
+    background-color: #14a800;
+    font-size: 2rem;
+    display: inline-block;
+    color: white;
+    padding:1.5rem 4rem;
+    border-radius: 3rem;
+    text-decoration: underline;
+}
+
+.home .left-container a:hover{
+    text-decoration: none;
+}
+.home img{
+    width:60rem
+}
 
 
 
