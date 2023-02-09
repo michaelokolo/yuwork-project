@@ -600,31 +600,32 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     height: 100vh;
     align-items: center;
     justify-content: center;
-    gap:20rem;
+    gap:15rem;
     display: flex;
+    padding:0 5rem
     
 }
 
 .home .left-container h1{
-    font-size: 11rem;
+    font-size: 7.5rem;
     font-family: 'Cardo', serif;
     color: #14a800;
-    line-height: 11rem;
+    line-height: 8rem;
     letter-spacing: 0.1rem;
 }
 
 .home .left-container p{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #5e6d55;
 }
 
 .home .left-container a{
-    margin-top: 5rem;
+    margin-top: 3rem;
     background-color: #14a800;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: inline-block;
     color: white;
-    padding:1.5rem 4rem;
+    padding:1rem 3rem;
     border-radius: 3rem;
     text-decoration: underline;
 }
@@ -633,7 +634,7 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     text-decoration: none;
 }
 .home img{
-    width:60rem
+    width:50rem
 }
 
 
@@ -799,268 +800,37 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
         width: 95%;
         color: white;
     }
+
+    .home{
+        align-items:start;
+        padding-top: 9rem;
+    }
+
+    .home img{
+        width: 40rem;
+    }
    
+
+    .home .left-container h1{
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .home .left-container p{
+        font-size: 1.8rem;
+        gap:0rem;
+    }
 }
 
-
-
-/* .nav-container{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 0 24px 0;
-    
-    height: 50px;
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-}
-.logo a{
-    color: #14a800;
-    font-weight:550;
-    font-size: 19px;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    padding-right:20px;
-}
-
-
-
-.left-nav{
-    display: flex;
-    width: 50%;
-    height: 64px;
-    align-items: center;
-}
-
-.left-nav-items-container .left-nav-items{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.left-nav-items .left-nav-item button{
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 22px;
-    cursor: pointer;
-    color: #001e00;
-    background: none;
-    border: none;
-}
-
-.left-nav-items .left-nav-item button span i{
-    font-size: 9px;
-}
-
-.left-nav-items .left-nav-item button a{
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 22px;
-    cursor: pointer;
-    color: #001e00;
-    text-decoration: none;
-}
-
-
-.right-nav{
-    display: flex;
-    width: 50%;
-    justify-content: right;
-    height: 100%;
-}
-
-.nav-search-input-container input{
-    width: 100%;
-    
-}
-
-.search-wrapper{
-    background-color: gray;
-    width:50%;
-    height: 35px;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 70px;
-    position: relative;
-}
-
-.search-wrapper form{
-    display: flex;
-    position: relative;
-}
-
-.nav-search-dropdown-container{
-    position: relative;
-}
-.nav-search-btns button{
-    position: absolute;
-    top:10px;
-    left:4px;
-    background: none;
-    border: none;
-}
-
-/*--- styling the Find Talent dropdown ---*/
-
-/* .findtalent-dropdown-container{
-    display: flex;
-    height: 420px;
-    border-bottom: 0px solid rgb(184, 182, 182);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.09);
-    border-radius: 6px;
-    padding:24px;
-    
-}
-
-.findtalent-dropdown-container .container-left ul li{
-    list-style: none;
-    padding-bottom: 10px;
-}
-
-.findtalent-dropdown-container .container-left ul{
-    margin: 0;
-    padding: 0;
+@media (max-width:768px){
+    .home img{
+        display:none;
+    }
+    .home .left-container h1{
+        font-size: 5rem;
+        line-height: 5rem;
+        
+    }
 
 }
 
-.findtalent-dropdown-container .container-left ul li button{
-    background:none;
-    border: none;
-    height: 55px;
-    width: 300px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-
-
-}
-
-.findtalent-dropdown-container .container-left ul li .left-nav-item-dropdown-btn:hover{
-    background-color: #f0f7ee;
-    cursor: pointer;
-}
-
-
-.findtalent-dropdown-container .container-left ul li button a{
-    text-decoration: none;
-    color: #545554;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 22px;
-    
-}
-
-.findtalent-dropdown-container .container-left button .sub-title{
-    display: block;
-    text-align: left;
-    font-size: 10px;
-    
-}
-
-.findtalent-dropdown-container .container-left button span i{
-    position: absolute;
-    right: 20px;
-    top:50%;
-    transform: translateY(-50%);
-    color:#14a800;
-}
-
-.container-left{
-    position: relative;
-}
-
-.container-left::after{
-    content: "";
-    position: absolute;
-    background-color: rgb(207, 205, 205);
-    width:0.5px;
-    height:95%;
-    right:-30px;
-    top:0px;
-}
-
-.container-center{
-    margin-left: 40px;
-    position:relative;
-    padding-left:40px;
-    font-size: 12px;
-    
-}
-
-.container-center .big-text{
-    text-decoration: none;
-    color: #545554;
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 10px;
-    position: relative;
-    padding-top: 10px;
-
-}
-
-.container-center .big-text sup{
-    vertical-align: super;
-    font-size: 5.2px;
-    position: absolute;
-    top:4px;
-    
-}
-
-.container-center .small-text{
-    font-size: 10px;
-    line-height: 18px;
-    color: #7e7e7e;
-}
-.container-center button{
-    background: none;
-    border: none;
-    font-size: 10px;
-    padding: 0;
-    color: #14a800;
-}
-
-.container-center button a{
-    color: #128d02;
-    padding-right: 10px;
-}
-
-.container-center::before{
-    content: "";
-    position: absolute;
-    background-color: #8ee483;
-    width: 15%;
-    height: 3px;
-    top:-5px;
-    left:40px;
-}
-
-
-.container-right{
-    margin-top:25px;
-    margin-left:60px;
-
-}
-.container-right button{
-    background: none;
-    border:none;
-    
-}
-
-.container-right li{
-    list-style: none;
-    
-}
-
-.container-right button a{
-    text-decoration: none;
-    color: #5e5d5d;
-    font-size: 11px;
-    line-height: 30px;
-} */ */
