@@ -583,7 +583,6 @@ header .dropdown-menu-right-third .dropdown-menu-right-third1 a{
 }
 header .dropdown-menu-right-third .dropdown-menu-right-third2{
     height: 100%;
-    
     font-size: 1.6rem;
     display: flex;
     flex-direction: column;
@@ -597,35 +596,47 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
 
 /*styling the home section*/
 .home{
-    height: 100vh;
+    margin-top: 20rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap:15rem;
     display: flex;
-    padding:0 5rem
+    padding:0 5rem 5rem;
+    max-width: 150rem;
+    margin: auto;
     
 }
 
+.home .left-container{
+    width: 70rem;
+}
+
 .home .left-container h1{
-    font-size: 7.5rem;
+    font-size: 10rem;
     font-family: 'Cardo', serif;
     color: #14a800;
-    line-height: 8rem;
+    line-height: 10rem;
     letter-spacing: 0.1rem;
+    
+}
+
+.home .left-container .top{
+    padding-top: 1.5rem;
 }
 
 .home .left-container p{
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #5e6d55;
+    
 }
 
 .home .left-container a{
-    margin-top: 3rem;
+    margin-top: 4.7rem;
     background-color: #14a800;
-    font-size: 1.5rem;
+    font-size: 2rem;
     display: inline-block;
     color: white;
-    padding:1rem 3rem;
+    padding:1.3rem 4.5rem;
     border-radius: 3rem;
     text-decoration: underline;
 }
@@ -634,15 +645,33 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     text-decoration: none;
 }
 .home img{
-    width:50rem
+    width:55rem;
+    padding-top: 15rem;
+
+}
+
+/*Styling the about section*/
+.about img{
+    width: 60rem;
+}
+
+.about{
+    padding: 0 5rem 2rem;
+    display: flex;
+    justify-content:center;
+    gap:5rem;
+    width: 90%;
+}
+
+.about .text-content h2{
+    font-size: 5rem;
+    font-family: 'Cardo', serif;
 }
 
 
 
 
-
-
-@media (max-width:1200px) {
+@media (max-width:1199px) {
    
     .dropdown-menu .dropdown-menu-right-third{
         flex-wrap: wrap;
@@ -686,6 +715,24 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
         margin: 0;
     }
     
+
+    .home{
+        width: 130rem;
+        justify-content: center;
+        gap:2rem;
+    }
+    .home .left-container{
+        width: 100rem;
+    }
+
+    .home .left-container h1{
+        font-size: 8.7rem;
+        line-height: 7.5rem;
+    }
+
+    .home .left-container p{
+        font-size: 3rem;
+    }
 }
 
 
@@ -804,21 +851,34 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     .home{
         align-items:start;
         padding-top: 9rem;
+        display: flex;
+        gap:0;
+        max-width: 100rem;
     }
 
     .home img{
         width: 40rem;
+        margin-top: 0;
+        padding-top: 0;
     }
-   
+    .home .left-container{
+        width: 50rem;
+    }
 
     .home .left-container h1{
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 7rem;
+        line-height: 7rem;
+        
     }
 
     .home .left-container p{
-        font-size: 1.8rem;
+        font-size: 2.6rem;
         gap:0rem;
+        word-spacing: 0.0001rem;
+    }
+
+    .home .left-container a{
+        padding: 1rem 3rem;
     }
 }
 
@@ -826,9 +886,13 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     .home img{
         display:none;
     }
+    .home .left-container{
+        margin-top: 3rem;
+    }
     .home .left-container h1{
-        font-size: 5rem;
-        line-height: 5rem;
+        font-size: 6.5rem;
+        line-height: 7rem;
+        font-weight: 600;
         
     }
 

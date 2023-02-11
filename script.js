@@ -57,28 +57,6 @@ menubar.addEventListener('click', activateMenu);
 
 
 
-
-// function buttonhoved(){ 
-// for(let i = 0; i <= dropdownbtnEl.length; i++){
-//     dropdownbtnEl[i].addEventListener('mouseover', ()=>{
-//         dropdownbtnEl[i].style.backgroundColor = 'var(--font-hover-color)'
-//         let lastbtn = dropdownbtnEl[i];
-//         var buttonNum = `${i}`;
-//     })
-
-//     dropdownbtnEl[i].addEventListener('mouseout', ()=>{
-//         dropdownbtnEl[i].style.backgroundColor = 'white'
-//         let lastbtn = dropdownbtnEl[i];
-//     })
-    
-// }
-
-// console.log(buttonNum)
-// }
-
-// buttonhoved()
-// console.log(buttonNum)
-
 dropdownbtn1.addEventListener('mouseover', ()=>{
     dropdownright1.classList.add('active1');
     dropdownright2.classList.remove('active2');
