@@ -653,6 +653,9 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
 /*Styling the about section*/
 .about img{
     width: 60rem;
+    padding: 0;
+    margin: 0;
+    border-radius: 1rem;
 }
 
 .about{
@@ -660,12 +663,62 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     display: flex;
     justify-content:center;
     gap:5rem;
-    width: 90%;
+    max-width: 150rem;
+    margin: auto;
+}
+
+.about .text-content{
+    width: 75rem;
 }
 
 .about .text-content h2{
     font-size: 5rem;
     font-family: 'Cardo', serif;
+}
+
+.about .text-content .sub-heading{
+    padding-top: 3rem;
+    
+}
+
+.about .text-content .sub-heading h3{
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.about .text-content .sub-heading span i{
+    font-size: 1.8rem;
+    padding-right: 2rem;
+}
+
+.about .text-content .sub-heading p{
+    font-size: 1.8rem;
+    font-weight: 300;
+    padding-left: 4.4rem;
+}
+
+.about .text-content .buttons{
+    padding-top:4rem;
+}
+
+.about .text-content .buttons .btn1{
+    background-color:#2f9721;
+    font-size: 2rem;
+    color: white;
+    padding:1.2rem 3rem;
+    border-radius: 3rem;
+    font-weight: 500;
+}
+
+.about .text-content .buttons .btn2{
+    background:none;
+    font-size: 2rem;
+    color: #2f9721;
+    border: 0.3rem solid #2f9721;
+    padding:1.2rem 3rem;
+    border-radius: 3rem;
+    font-weight: 500;
+    margin-left: 2rem;
 }
 
 
