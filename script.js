@@ -13,7 +13,10 @@ const dropdownright2 = document.querySelector('.dropdown-menu-right-second');
 const dropdownright3 = document.querySelector('.dropdown-menu .dropdown-menu-right-third');
 const dropdownbtn3 = document.querySelector('.dropdown-menu .dropdown-menu-left .btn3');
 const findtalentdropdown = document.querySelector('header .main-nav .container-left .dropdown-menu');
-const findtalentlink = document.querySelector('header .main-nav .container-left .top')
+const findtalentlink = document.querySelector('header .main-nav .container-left .top');
+const imgEl = document.querySelector('.about img');
+const imagebar = document.querySelectorAll('.about .img-section .bars li');
+const barElements = document.querySelectorAll('.about .bars ul li div');
 
 
  function changeFormColor(){
@@ -93,5 +96,52 @@ dropdownbtn3.addEventListener('mouseout', ()=>{
     findtalentlink.addEventListener('click', ()=>{
         findtalentdropdown.classList.toggle('active6')
     })
+
+const imageslink = [
+    "about-img1.jpg",
+    "about-img2.jpg",
+    "about-img3.jpg",
+    "about-img4.jpg"
+]
+// let i = 0;
+// let width = 0;
+// let a = 0;
+// function imageSlide(){
+//     imgEl.src = imageslink[i];
+//     i++
+//     if(i === imageslink.length){
+//         i = 0;
+//     }
+//     setTimeout(imageSlide, 4000);
+// }
+
+//imageSlide();
+let i = 0;
+let width = 0;
+let a = 0;
+function mybar(){
+    
+    barElements[a].style.width = width + "%"
+    imgEl.src = imageslink[i];
+    width++
+    if(width === 101){
+        i++
+        a++
+        width = 0;
+       
+    }
+    if(barElements[3].style.width === "101%"){
+        i = 0;
+    }
+    
+    setTimeout(mybar, 40);
+   
+}
+
+mybar();
+
+
+
+
 
 

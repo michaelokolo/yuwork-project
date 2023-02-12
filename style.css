@@ -651,13 +651,6 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
 }
 
 /*Styling the about section*/
-.about img{
-    width: 60rem;
-    padding: 0;
-    margin: 0;
-    border-radius: 1rem;
-}
-
 .about{
     padding: 0 5rem 2rem;
     display: flex;
@@ -666,6 +659,47 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     max-width: 150rem;
     margin: auto;
 }
+
+.about img{
+    width: 60rem;
+    padding: 0;
+    margin: 0;
+    border-radius: 1rem;
+    
+}
+
+
+.about .img-section{
+    position:relative;
+
+}
+
+.about .img-section .bars ul{
+    position: absolute;
+    width: 100%;
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+    gap:0.6rem;
+    position:absolute;
+    bottom: 0.6rem;
+}
+
+.about .img-section .bars li{
+    width:23%;
+    height: 0.5rem;
+    background-color:rgb(204, 198, 198);
+    list-style: none;
+    border-radius: 0.5rem;
+}
+
+.about .img-section .bars li div{
+    width: 0%;
+    height: 0.5rem;
+    background-color: rgb(131, 128, 128);
+    border-radius: 0.5rem;
+}
+
 
 .about .text-content{
     width: 75rem;
@@ -720,6 +754,8 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     font-weight: 500;
     margin-left: 2rem;
 }
+
+
 
 
 
