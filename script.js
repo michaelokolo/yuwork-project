@@ -103,19 +103,7 @@ const imageslink = [
     "about-img3.jpg",
     "about-img4.jpg"
 ]
-// let i = 0;
-// let width = 0;
-// let a = 0;
-// function imageSlide(){
-//     imgEl.src = imageslink[i];
-//     i++
-//     if(i === imageslink.length){
-//         i = 0;
-//     }
-//     setTimeout(imageSlide, 4000);
-// }
 
-//imageSlide();
 let i = 0;
 let width = 0;
 let a = 0;
@@ -128,17 +116,23 @@ function mybar(){
         i++
         a++
         width = 0;
-       
-    }
-    if(barElements[3].style.width === "101%"){
-        i = 0;
+        if(a === barElements.length){
+            
+            for(a = 0; a < barElements.length; a++){
+                barElements[a].style.width = 0 + "%"
+            }
+
+            i = 0;
+            a = 0;
+        }
     }
     
-    setTimeout(mybar, 40);
+    
+    setTimeout(mybar, 70);
    
 }
+window.onload = mybar
 
-mybar();
 
 
 

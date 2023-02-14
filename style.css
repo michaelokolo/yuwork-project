@@ -661,7 +661,8 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
 }
 
 .about img{
-    width: 60rem;
+   width: 100%;
+   height: 100%;
     padding: 0;
     margin: 0;
     border-radius: 1rem;
@@ -671,7 +672,7 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
 
 .about .img-section{
     position:relative;
-
+    width: 60rem;
 }
 
 .about .img-section .bars ul{
@@ -822,6 +823,10 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     .home .left-container p{
         font-size: 3rem;
     }
+
+    .about{
+        width: 130rem;
+    }
 }
 
 
@@ -969,6 +974,12 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     .home .left-container a{
         padding: 1rem 3rem;
     }
+
+    .about{
+        gap:0;
+        gap:2.5rem;
+        max-width: 100rem;
+    }
 }
 
 @media (max-width:768px){
@@ -984,6 +995,8 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
         font-weight: 600;
         
     }
-
+    .about{
+        flex-wrap: wrap;
+    }
 }
 
