@@ -760,6 +760,55 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     margin-left: 2rem;
 }
 
+/*start styling the talent section*/
+
+.talent{
+    padding: 6rem 5rem 2rem;
+    gap:5rem;
+    max-width: 150rem;
+    margin: auto;
+}
+
+
+.talent .content h2{
+    font-size: 5rem;
+    font-family: 'Cardo', serif;
+}
+.talent .content .subheading{
+    font-size: 2rem;
+    padding: 1rem 0 3rem;
+    font-weight: 500;
+    color: rgb(110, 110, 110);
+}
+
+.talent .content .subheading span{
+    color:#348d28;
+    font-weight: 500;
+}
+
+.talent .content .box-container{
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:3rem;
+}
+
+.talent .content .box-container .box{
+    background-color: #f2f7f2;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+}
+
+.talent .content .box-container .box h3{
+    font-size: 3rem;
+    font-weight: normal;
+    padding-bottom: 1.5rem;
+}
+.talent .content .box-container .box .skills{
+    font-size: 2rem;
+    color: rgb(110, 110, 110);
+}
+
 
 
 
@@ -1001,6 +1050,7 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
         display: flex;
         justify-content: center;
         align-items: center;
+       
         
     }
     .about .img-section .img-bigscreen{
@@ -1035,11 +1085,17 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
 }
 
 @media (max-width:767px){
+    .home{
+        width: 70rem;
+    }
+    
     .home img{
         display:none;
     }
     .home .left-container{
         margin-top: 3rem;
+        
+        
     }
     .home .left-container h1{
         font-size: 6.5rem;
@@ -1049,6 +1105,7 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     }
     .about{
         flex-wrap: wrap;
+        width: 70rem;
     }
 
     .about .img-section{
@@ -1059,6 +1116,7 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
 
     .about .img-section .img-bigscreen{
         display: block;
+        width: 100%;
     }
 
     .about .img-section .img-smallscreen{
