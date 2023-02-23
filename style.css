@@ -796,7 +796,8 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
 .talent .content .box-container .box{
     background-color: #f2f7f2;
     padding: 2.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.9rem;
+    height: 17rem;
 }
 
 .talent .content .box-container .box h3{
@@ -807,8 +808,21 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
 .talent .content .box-container .box .skills{
     font-size: 2rem;
     color: rgb(110, 110, 110);
+    display: flex;
+    align-items: center;
+    gap: 6rem;
 }
 
+.talent .content .box-container .box .skills .star{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.talent .content .box-container .box .skills .star i{
+    font-size: 1.5rem;
+    color: #139203;
+}
 
 
 
@@ -880,6 +894,22 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     .about{
         width: 130rem;
     }
+
+    .talent{
+        width: 130rem;
+    }
+
+    .talent .content .box-container{
+        width:100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+        gap:3rem;
+    }
+
+    .talent .content .box-container .box{
+        height: 12rem;
+    }
+
 }
 
 
@@ -1033,6 +1063,10 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
         gap:2.5rem;
         max-width: 100rem;
     }
+
+    .talent{
+        width: 100rem;
+    }
 }
 
 @media (max-width: 850px) {
@@ -1131,5 +1165,26 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
         align-items: center;
         
     }
+
+    .about .text-content .buttons .btn1{
+        display: none;
+    }
+    .talent{
+        width: 60rem;
+        margin-left: 6rem;
+    }
+
+    .talent .content h2{
+        font-size: 4.2rem;
+        
+    }
 }
 
+@media (max-width:699px){
+    .about .text-content .buttons .btn2{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        margin: 0;
+    }
+}
