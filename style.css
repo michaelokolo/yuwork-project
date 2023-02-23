@@ -824,9 +824,91 @@ header .dropdown-menu-right-third .dropdown-menu-right-third2{
     color: #139203;
 }
 
+/*Start styling the enterprise section*/
 
+.enterprise-suite{
+    max-width: 150rem;
+    height: 68rem;
+    color: #fff;
+    background-color: #13544e;
+    margin: auto;
+    margin-top: 6rem;
+    display: flex;
+    border-radius: 1rem;
+}
 
+.enterprise-suite .content-container{
+    width: 60%;
+    padding:5rem 0 0 5rem;
+}
 
+.enterprise-suite .content-container h3{
+    font-size: 2.9rem;
+    font-weight: normal;
+    padding-bottom: 1.5rem;
+}
+
+.enterprise-suite .content-container h2{
+    font-size: 7rem;
+    font-family: 'Cardo', serif;
+    line-height: 8rem;
+    letter-spacing: 0.00001rem;
+    padding-bottom: 3rem;
+}
+
+.enterprise-suite .content-container h2 span{
+    font-size: 7rem;
+    font-family: 'Cardo', serif;
+    line-height: 8rem;
+    color: #91e6b3;
+    letter-spacing: 0.00001rem;
+}
+
+.enterprise-suite .content-container .subheading{
+    font-size: 2.3rem;
+    padding-bottom: 3rem;
+}
+.enterprise-suite .image{
+    width:40%;
+    height: 100%;
+
+}
+.enterprise-suite .content-container .items-container{
+    font-size: 2.3rem;
+}
+
+.enterprise-suite .content-container .items-container .item{
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+.enterprise-suite .content-container .items-container .item i{
+    font-size: 1.8rem;
+    color: #91e6b3;
+}
+
+.enterprise-suite .content-container .button{
+    color: #fff;
+    margin-top: 3rem;
+
+}
+
+.enterprise-suite .content-container .button a{
+    padding: 1rem 3rem;
+    background-color: #fff;
+    font-size: 2.3rem;
+    border-radius: 3rem;
+    color: #13544e;
+}
+
+.enterprise-suite .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0.95rem 0.95rem 0;
+}
 
 @media (max-width:1199px) {
    
